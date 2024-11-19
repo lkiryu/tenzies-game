@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0B2434;
+}
+
+.game{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    width: 320px;
+    height: 320px;
+    border-radius: 10px;
+    padding: 30px 35px;
+}
+
+.dices{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.roll-button{
+    border: none;
+    background-color: #5035FF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.roll-button:active{
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.title{
+    color: #2B283A;
+    font-size: 25px;
+}
+
+.description{
+    color: #4A4E74;
+    font-size: 13px;
+    text-align: center;
+}
